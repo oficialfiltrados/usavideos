@@ -26,19 +26,25 @@
 
     .play-button {
       display: inline-block;
-      padding: 10px 20px;
-      border: 2px solid #FF5733; /* Cambia el color del borde aquí */
-      border-radius: 10px; /* Aumenta el radio del borde */
-      background-color: #FF5733; /* Cambia el color de fondo aquí */
-      color: #fff; /* Cambia el color del texto a blanco */
+      padding: 15px 30px; /* Aumenta el tamaño del botón para dispositivos móviles */
+      border: 2px solid #FF5733;
+      border-radius: 10px;
+      background-color: #FF5733;
+      color: #fff;
       font-weight: bold;
       text-decoration: none;
       transition: background-color 0.3s, color 0.3s;
     }
 
     .play-button:hover {
-      background-color: #fff; /* Cambia el color de fondo al pasar el mouse */
-      color: #FF5733; /* Cambia el color del texto al pasar el mouse */
+      background-color: #fff;
+      color: #FF5733;
+    }
+
+    @media (max-width: 768px) {
+      .play-button {
+        padding: 12px 24px; /* Tamaño reducido para pantallas más pequeñas */
+      }
     }
   </style>
 </head>
